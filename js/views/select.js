@@ -25,6 +25,8 @@ app.SelectView = Backbone.View.extend({
 
   events: {
     'change #borough': 'populateGarages',
+    'click #next-form': 'nextForm',
+    'click #previous-form-front': 'previousForm'
   },
 
   populateGarages: function(){
@@ -37,6 +39,14 @@ app.SelectView = Backbone.View.extend({
     }
     $('#garages',this.el).removeAttr('disabled');
   },
+
+  nextForm: function(){
+    router.navigate('information',true);
+  },
+
+  previousForm: function(){
+    router.navigate('front',true);
+  }
 
 });
 

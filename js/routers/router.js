@@ -1,9 +1,11 @@
-var app = app || {}
+var app = app || {};
 
 app.Router = Backbone.Router.extend({
   routes: {
     '': 'front_item',
-    'select': 'select_item'
+    'front': 'front_item',
+    'select': 'select_item',
+    'information': 'information_view'
   },
 
   front_item: function(){
@@ -16,6 +18,13 @@ app.Router = Backbone.Router.extend({
     selectView = new app.SelectView();
     selectView.render();
   },
+
+  information_view: function(){
+    console.log('Information View getting called');
+    informationView = new app.InformationView();
+    informationView.render();
+
+  }
 
 
 });

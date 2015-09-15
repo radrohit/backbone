@@ -6,6 +6,14 @@
   <script src="js/lib/jquery-1.11.3.min.js"></script>
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone-min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -48,12 +56,33 @@
         <option value=''>Select</option>
       </select>
     </form>
+    <button id ="previous-form-front">Previous</button>
+    <button id ="next-form">Next</button>
+
+
+  </script>
+
+   <script type="text/template" id="information-template">
+    <h1>Enter Your License Information</h1>
+    <form id="license-info">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      Address: <input type="text" name="address"><br>
+      City: <input type="text" name="city"><br>
+      State: <input type='text' name="state"><br>
+      Zip Code: <input type="text" name="zip"><br>
+      Licesnse No: <input type="text" name="licenseno"><br>
+      <input type="submit" value="Submit">
+      <input type='hidden' id='id' class='input' />
+    </form>
+    <button id="previous-form-select">Previous</button>
 
   </script>
 
 
   <script src="js/views/front.js"></script>
   <script src="js/views/select.js"></script>
+  <script src="js/views/information.js"></script>
   <script src="js/routers/router.js"></script>
 
   <script src="js/app.js"></script>

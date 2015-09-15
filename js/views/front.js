@@ -23,9 +23,8 @@ app.FrontView = Backbone.View.extend({
   },
 
   startForm: function(){
-
-
     router.navigate('select',true);
-
   },
+
+
 });
