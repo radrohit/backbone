@@ -12,7 +12,8 @@
 <body>
   <div id="front-page">
   </div>
-
+  <div id="select-page">
+  </div>
   <script type="text/template" id="front-template">
     <div id="form-container">
       <h1>NYC DOT Municipal Garage Reservation</h1>
@@ -35,9 +36,27 @@
       <button id="start-form">Start</button>
 
       </div>
-
   </script>
+
+
+   <script type="text/template" id="select-template">
+    <form>
+      Borough:
+      <select id="borough">
+         <option value=''>Select</option>
+      </select>
+      Garages:
+      <select id="garages" disabled="disabled">
+        <option value=''>Select</option>
+      </select>
+    </form>
+  </script>
+
+
   <script src="js/views/front.js"></script>
+  <script src="js/views/select.js"></script>
+  <script src="js/routers/router.js"></script>
+
   <script src="js/app.js"></script>
 
 </body>
