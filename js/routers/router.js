@@ -1,9 +1,6 @@
 var app = app || {}
 
 app.Router = Backbone.Router.extend({
-  initialize: function(){
-
-  },
   routes: {
     '': 'front_item',
     'select': 'select_item'
@@ -15,6 +12,7 @@ app.Router = Backbone.Router.extend({
   },
 
   select_item: function(){
+    console.log('second event called');
     selectView = new app.SelectView();
     selectView.render();
   },

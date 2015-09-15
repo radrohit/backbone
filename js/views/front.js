@@ -18,15 +18,14 @@ app.FrontView = Backbone.View.extend({
 
   // Render the frontTemplate function
   render: function(){
+    this.$el.empty();
     this.$el.html(this.frontTemplate);
   },
 
   startForm: function(){
-    router = new app.Router();
-    Backbone.history.start();
-    this.$el.hide();
+
+
     router.navigate('select',true);
-    Backbone.history.stop();
 
   },
 });

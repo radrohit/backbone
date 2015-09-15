@@ -11,9 +11,11 @@ app.boroughObject = {
 
 //This renders the front page view of the website
 app.SelectView = Backbone.View.extend({
-  el: $('#select-page'),
+  el: $('#front-page'),
   selectTemplate: _.template($('#select-template').html()),
   render: function(){
+    $('#front-page').empty();
+    console.log('Iam');
     this.$el.html(this.selectTemplate);
     for(var borough in app.boroughObject){
       $('#borough', this.el).append('<option value="'+borough+'">'+borough+'</option>');
