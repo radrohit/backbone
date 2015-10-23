@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
   <meta charset="utf-8">
@@ -12,3 +13,94 @@
 	<script src="backbone-min.js"></script>
 	<script src="app.js"></script>
 </body>
+=======
+<head>
+  <meta charset="utf-8">
+  <title>Parking Garage Reservation</title>
+  <script src="js/lib/jquery-1.11.3.min.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone-min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+  <div id="front-page">
+  </div>
+  <script type="text/template" id="front-template">
+    <div id="form-container">
+      <h1>NYC DOT Municipal Garage Reservation</h1>
+      <div id="form-info">
+      <p class="intro">This site is designed to give the public fair access to municipal garage permits throughout the city. It is a reservation system that allows customers to reserve a space on the reservation list but does not guarantee a permit will be issued. The responsibility for obtaining the permit is still upon the customer, who will still have to present the reservation number, appropriate forms and identifications to the garage manager at the facility for final verification and issuance of the permit.</p>
+      <div id="info-items">
+      <ul>
+      <li>Permits will go on sale at (5) <strong>five days</strong> prior to the start of the month</li>
+      <li>Permit sales will start at <strong>8AM</strong></li>
+      <li>Completed application and fee must be brought directly to the garage managers office for validation and permit issuance</li>
+      </ul>
+      </div>
+      <div id="form-disclaimer">
+      <h5>Disclaimer</h5>
+      <p>
+        (1) If you don’t bring your printed ticket to the garage within 5 days the reservation will be cancelled. <br>
+        (2) Prior to issuing a reservation ticket, the system will do a DMV check to verify driver’s license and vehicle registration information <br>
+        (3) only 1 permit will be issued per person per DMV Driver’s license information
+      </p>
+      <button id="start-form">Start</button>
+
+      </div>
+  </script>
+
+
+   <script type="text/template" id="select-template">
+    <form id ="borough-selection">
+      Borough:
+      <select id="borough">
+         <option value=''>Select</option>
+      </select>
+      Garages:
+      <select id="garages" disabled="disabled">
+        <option value=''>Select</option>
+      </select>
+    </form>
+    <button id ="previous-form-front">Previous</button>
+    <button id ="next-form">Next</button>
+
+
+  </script>
+
+   <script type="text/template" id="information-template">
+    <h1>Enter Your License Information</h1>
+    <form id="license-info">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      Address: <input type="text" name="address"><br>
+      City: <input type="text" name="city"><br>
+      State: <input type='text' name="state"><br>
+      Zip Code: <input type="text" name="zip"><br>
+      Licesnse No: <input type="text" name="licenseno"><br>
+      <input type="submit" value="Submit">
+      <input type='hidden' id='id' class='input' />
+    </form>
+    <button id="previous-form-select">Previous</button>
+
+  </script>
+
+
+  <script src="js/views/front.js"></script>
+  <script src="js/views/select.js"></script>
+  <script src="js/views/information.js"></script>
+  <script src="js/routers/router.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
+>>>>>>> a4120d5743aa00e8de2b5a51f6a5c58d8338a1cc
