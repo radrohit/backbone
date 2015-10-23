@@ -1,6 +1,7 @@
 # Drupal Backbone App
 
-Application uses drupal as backend rest server. To make drupal into a rest server. 
+Application uses drupal as backend rest server. To make drupal into a rest server. Based on the following tutorial 
+http://www.codeproject.com/Articles/797899/BackBone-Tutorial-Part-CRUD-Operations-on-Backbone
 
 ## Install Following Modules in Drupal
   - Services
